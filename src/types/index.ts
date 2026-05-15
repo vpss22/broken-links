@@ -1,6 +1,7 @@
 export interface LeadScore {
   score: number;
   tier: 'COLD' | 'WARM' | 'HOT';
+  ai_insight?: string;
 }
 
 export interface Lead {
@@ -14,4 +15,10 @@ export interface Lead {
 
 export interface ScanResponse {
   leads: Lead[];
+}
+
+export interface ScanConfig {
+  mode: 'manual' | 'ai';
+  model: string;
+  apiKey: string;
 }
