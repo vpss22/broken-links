@@ -23,7 +23,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# lib/  <-- Commented out or removed to prevent ignoring src/lib
 lib64/
 parts/
 sdist/
